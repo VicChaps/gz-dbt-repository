@@ -6,22 +6,22 @@ sources:
          - name: raw_gz_product
            description: "ma table primaire de productions"
            columns:
-           - name: products_id
-           tests:
+            - name: products_id
+              tests:
                 - unique
                 - not_null
          - name: raw_gz_sales
            description: "ma table primaire de ventes"
            columns:
-           - name: pdt_id
-           tests:
+            - name: pdt_id
+              tests:
                - unique
                - not_null
          - name: raw_gz_ship
            description: "ma table primaire d'envoi"
            columns:
-           - name: orders_id
-           tests:
+            - name: orders_id
+              tests:
                 - unique
                 - not_null
 
