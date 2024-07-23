@@ -16,9 +16,9 @@ sources:
             - name: pdt_id
               tests:
                - unique:
-                  column_date: "(orders_id||'-'||products_id)"
+                  column_date: "(orders_id || '-' || products_id)"
                - not_null:
-                  column_date: "(orders_id||'-'||products_id)"
+                  column_date: "(orders_id || '-' || products_id)"
          - name: raw_gz_ship
            description: "ma table primaire d'envoi"
            columns:
