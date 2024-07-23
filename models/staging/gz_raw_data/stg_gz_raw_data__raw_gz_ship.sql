@@ -15,7 +15,6 @@ renamed as (
         ship_cost
 
     from source
-
 )
 
 select * from renamed
