@@ -13,7 +13,7 @@ sources:
          - name: raw_gz_sales
            description: "ma table primaire de ventes"
            columns:
-           - name: pdt_id
+            - name: pdt_id
            tests:
             - unique:
               column_date: "(orders_id || '-' || pdt_id)"
