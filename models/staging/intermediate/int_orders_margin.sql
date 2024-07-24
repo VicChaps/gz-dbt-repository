@@ -5,6 +5,6 @@ select
   round(SUM(quantity),2) as quantity,
   round(SUM(purchase_cost),2) as purchase_cost,
   round(SUM(margin),2) as margin
-from {{ ref("stg_gz_raw_data__raw_gz_sales") }}
+from {{ ref("int_sales_margin") }}
 group by orders_id,date_date
 order by orders_id desc
